@@ -39,7 +39,8 @@ import {
     iOSApplication,
     LoadAppCSSEventData,
     UnhandledErrorEventData,
-    DiscardedErrorEventData
+    DiscardedErrorEventData,
+    NativeScriptError
 } from "./application";
 
 export { UnhandledErrorEventData, DiscardedErrorEventData, CssChangedEventData, LoadAppCSSEventData };

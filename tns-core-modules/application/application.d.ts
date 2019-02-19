@@ -3,7 +3,6 @@
  * @module "application"
  */ /** */
 
-///<reference path="../tns-core-modules.d.ts" /> Include global typings
 import { NavigationEntry, View, Observable, EventData } from "../ui/frame";
 
 /**
@@ -97,6 +96,16 @@ export interface OrientationChangedEventData extends ApplicationEventData {
      * New orientation value.
      */
     newValue: "portrait" | "landscape" | "unknown";
+}
+
+/**
+ * An extended JavaScript Error which will have the nativeError property initialized in case the error is caused by executing platform-specific code.
+ */
+export interface NativeScriptError extends Error {
+    /**
+     * Represents the native error object.
+     */
+    nativeError: any;
 }
 
 /**
